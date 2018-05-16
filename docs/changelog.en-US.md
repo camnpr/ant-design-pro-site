@@ -9,7 +9,11 @@ type: Other
 
 ### 2.0.0-beta.1
 
+<<<<<<< HEAD
 This update supports [babel-plugin-import](https://www.npmjs.com/package/babel-plugin-import).
+=======
+This update supports [babel-plugin-import] (https://www.npmjs.com/package/babel-plugin-import).
+>>>>>>> b313ae87cd961053c81c484599bb9f8e3f033d40
 
 Configuration is as follows
 

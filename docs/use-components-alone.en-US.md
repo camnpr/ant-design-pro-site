@@ -37,6 +37,26 @@ ReactDOM.render(<Result type="success" />, mountNode);
 
 > Note that pro's components is dependent on antd@3.0 by default and you need to ensure consistency with antd‘s version.
 
+### Load components on demand
+
+babel-plugin-import can be used for on-demand loading. After adding this plugin, you can write it like this
+```jsx
+import { Result } from 'ant-design-pro';
+
+ReactDOM.render(<Result type="success" />, mountNode);
+```
+It is recommended to use this method.
+
+babel-plugin-import configuration is as follows
+```
+ {
+    libraryName: 'ant-design-pro',
+    libraryDirectory: 'lib',
+    style: true,
+    camel2DashComponentName: false,
+  }
+```
+
 ## Document & FeedBack
 
 You can find all components, demos and API documents on [the components' page](http://pro.ant.design/components). 
